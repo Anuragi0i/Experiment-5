@@ -1,0 +1,103 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  overflow-x: hidden;
+  color: white;
+}
+
+/* App Layout */
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Glass Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #00c6ff;
+  color: white;
+  cursor: pointer;
+}
+
+/* Current Weather */
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.weather-left h1 {
+  font-size: 60px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Forecast */
+.forecast {
+  padding: 20px;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+/* Animations */
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
