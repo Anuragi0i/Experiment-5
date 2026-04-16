@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Background Layers -->
+  <div class="bg-overlay"></div>
+  <div class="bg-gradient"></div>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header glass">
+      <h1>🌦 Weather Dashboard</h1>
+
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Search city...">
+        <button id="searchBtn">Search</button>
+      </div>
+    </header>
+
+    <!-- Current Weather -->
+    <section class="current-weather glass">
+      <div class="weather-left">
+        <h2 id="cityName">--</h2>
+        <p id="dateTime">--</p>
+        <h1 id="temperature">--°C</h1>
+        <p id="condition">--</p>
+      </div>
+
+      <div class="weather-right">
+        <img id="weatherIcon" src="" alt="Weather Icon">
+      </div>
+    </section>
+
+    <!-- Details -->
+    <section class="details grid">
+      <div class="card glass">
+        <h3>Humidity</h3>
+        <p id="humidity">--%</p>
+      </div>
+
+      <div class="card glass">
+        <h3>Wind Speed</h3>
+        <p id="wind">-- km/h</p>
+      </div>
+
+      <div class="card glass">
+        <h3>Pressure</h3>
+        <p id="pressure">-- hPa</p>
+      </div>
+
+      <div class="card glass">
+        <h3>Feels Like</h3>
+        <p id="feelsLike">--°C</p>
+      </div>
+    </section>
+
+    <!-- Forecast Section -->
+    <section class="forecast glass">
+      <h2>5-Day Forecast</h2>
+      <div id="forecastContainer" class="forecast-grid"></div>
+    </section>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
